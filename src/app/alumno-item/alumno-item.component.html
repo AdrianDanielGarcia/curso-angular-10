@@ -1,4 +1,8 @@
-<mat-icon class="imagen">face</mat-icon>
-<div class="nombre">{{alumno.nombre}} {{alumno.apellido}}</div>
-<div class="perfil"> {{ alumno.perfil.descripcion }}</div>
-
+<div class="item-container"
+    (click)="flipSelection()"
+    [class.seleccionado]="seleccionado"
+>
+  <mat-icon class="imagen">face</mat-icon>
+  <div class="nombre">{{alumno.nombre}} {{alumno.apellido}}</div>
+  <div class="perfil"> {{ alumno.perfil.descripcion }}</div>
+</div>

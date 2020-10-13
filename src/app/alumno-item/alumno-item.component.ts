@@ -12,9 +12,14 @@ export class AlumnoItemComponent implements OnInit {
 
   alumno = alumnoData;
 
+  seleccionado = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  flipSelection() {
+    this.seleccionado = !this.seleccionado;
+  }
 }

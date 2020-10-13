@@ -1,4 +1,4 @@
-:host {
+.item-container {
   padding: 8px;
   background-color: #fff;
   border-radius: 4px;
@@ -41,4 +41,21 @@
   padding-left: 10px;
   font-weight: 500;
   font-size: 18px;
+}
+
+.seleccionado {
+  background-color: #606fc8;
+  color: #f8f8f8;
+}
+
+.seleccionado > .nombre {
+  color: rgba(255,255,255, 0.87);
+}
+
+.seleccionado > .perfil {
+  color: rgba(230,230,230, 0.87);
+}
+
+.seleccionado > mat-icon {
+  color: rgba(230,230,230, 0.87);
 }
